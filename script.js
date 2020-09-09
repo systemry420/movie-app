@@ -18,7 +18,7 @@ async function getMovies() {
             <img src="${IMGPATH + movie.poster_path}" alt="${movie.original_title}">
             <div class="movie-info">
                 <h3>${movie.original_title}</h3>
-                <span>${movie.vote_average}</span>
+                <span class="${getClassByRate(movie.vote_average)}">${movie.vote_average}</span>
             </div>
         `;
 
@@ -27,3 +27,11 @@ async function getMovies() {
     return respData;
 }
 
+function getClassByRate(rate){
+    if(rate > 7)
+        return 'green';
+    else if( rate <5)
+        return 'red';
+    else
+        return 'orange';
+}

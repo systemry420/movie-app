@@ -5,6 +5,9 @@ body {
     margin: 0;
     background: #22254b;
     font-family: 'Poppins', sans-serif;
+}
+
+main {
     display: flex;
     flex-wrap: wrap;
 }
@@ -15,6 +18,7 @@ body {
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
     background: #373b69;
     margin: 2rem;
+    overflow: hidden;
 }
 
 .movie img {
@@ -37,4 +41,17 @@ body {
     background: #22254b;
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: green;
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
 }
